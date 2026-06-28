@@ -1,7 +1,6 @@
 import migrationRunner from "node-pg-migrate";
 import { join } from "node:path";
 import database from "infra/database";
-import { Client } from "pg";
 
 export default async function migrations(request, response) {
   const allowedMethods = ["GET", "POST"];
